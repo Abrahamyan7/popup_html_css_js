@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="none notification visible success" id="notification">Контакные данные записаны</div>
+
+        <button class="btuON" id="myButton">Консультация</button>
+        <div class="Overlay" id="Over">
+            <div class="app-modal" id="modal-app" onclick="stopPropagation();">
+                <div class="app-modal_icon">
+                    <img src="images/icons8-cancel-24.png" class="modal-close_icon" id="icon" />
+                </div>
+                <div class="app-modal_container">
+                    <div class="app-undraw">
+                        <img src="images/popup.png" alt="Popup-img" />
+                    </div>
+                    <div class="app-form">
+                        <h3 class="form-title">Получить консультацию</h3>
+                        <form class="form-container" id="myForm">
+                            <div>
+                                <input class="first-input" id="first" placeholder="Ваше имя" value="" />
+                            </div>
+                            <div>
+                                <input type="number" class="second-input" id="second" placeholder="Ваш телефон"
+                                    value="" />
+                            </div>
+                            <p class="form-text">
+                                Нажимая “Отправить” вы
+                                подтверждаете свое согласие на обработку и хранение
+                                ваших персональных данных в
+                                соответствии с политикой обработки персональных данных.
+                            </p>
+                            <button class="form-btn" id="submitButton">Отправить запрос</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
